@@ -1,0 +1,27 @@
+Python Programming: Fundamentals and Capabilities
+
+Python is one of the most popular programming languages in the world.
+This language is widely used in web development, data analysis, machine learning, and automation.
+
+Main advantages of Python:
+- Simple and readable syntax
+- Rich standard library
+- Large developer community
+- Cross-platform compatibility
+
+Python has many modules for working with multithreading and multiprocessing.
+The threading module allows creating threads for parallel task execution.
+The multiprocessing module provides capabilities for creating separate processes.
+
+Example of using threads:
+import threading
+
+def worker():
+    print("Thread is working")
+
+thread = threading.Thread(target=worker)
+thread.start()
+
+Python is also excellent for file processing and text data handling.
+With built-in functions, you can easily read, write, and process text files.
+File operations are fundamental in many programming tasks and applications.

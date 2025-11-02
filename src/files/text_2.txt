@@ -1,0 +1,28 @@
+Parallel Computing and Multithreading
+
+In modern programming, it is very important to efficiently use computer resources.
+Multithreading and multiprocessing allow executing multiple tasks simultaneously.
+
+What is a thread?
+A thread is a lightweight execution unit within a process.
+Multiple threads can work in parallel within a single process.
+
+What is a process?
+A process is an independent program with its own memory space.
+Processes are isolated from each other and exchange data through special mechanisms.
+
+Differences between threading and multiprocessing:
+- threading: threads share memory, created faster
+- multiprocessing: processes are isolated, use all CPU cores
+
+Python has GIL (Global Interpreter Lock), which limits true thread parallelism.
+Therefore, for CPU-intensive tasks, it's better to use multiprocessing.
+For I/O operations (file reading, network), threading works excellently.
+
+Synchronization between threads is achieved using:
+- Lock (blocking)
+- Queue (queue)
+- Event (event)
+- Semaphore (semaphore)
+
+Performance optimization is crucial when dealing with large datasets and files.

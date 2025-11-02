@@ -1,0 +1,36 @@
+Data Processing and File Search
+
+Text data analysis is an important task in programming.
+Python provides powerful tools for working with text and files.
+
+Main file operations:
+- Reading file content
+- Searching for specific words or phrases
+- Processing large amounts of data
+- Parallel processing of multiple files
+
+When to use parallel processing:
+1. When working with a large number of files
+2. When performing time-consuming operations
+3. When you need to speed up the program
+
+Keyword search algorithm:
+1. Open file
+2. Read content
+3. Find all occurrences of keywords
+4. Save results
+
+For efficient search, you can use regular expressions (regex).
+The re module in Python provides functions for working with regular expressions.
+
+Example of word search in text:
+import re
+
+def find_keyword(text, keyword):
+    pattern = r'\b' + re.escape(keyword) + r'\b'
+    matches = re.findall(pattern, text, re.IGNORECASE)
+    return len(matches)
+
+Search results can be collected in a dictionary or list.
+It's important to properly synchronize access to shared data in multithreading.
+File processing efficiency depends on the chosen approach and data structure.
